@@ -43,20 +43,20 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: carSales
-          uri: http://carSales:8080
+        - id: carsales2
+          uri: http://carsales2:8080
           predicates:
             - Path=/carSaleses/**  
-        - id: inspection
-          uri: http://inspection:8080
+        - id: inspection2
+          uri: http://inspection2:8080
           predicates:
             - Path=/inspections/** 
-        - id: insurance
-          uri: http://insurance:8080
+        - id: insurance2
+          uri: http://insurance2:8080
           predicates:
             - Path=/insurances/** 
-        - id: dashboard
-          uri: http://dashboard:8080
+        - id: dashboard2
+          uri: http://dashboard2:8080
           predicates:
             - Path=/salesStatuses/** 
       globalcors:
