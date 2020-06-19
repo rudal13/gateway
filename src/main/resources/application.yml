@@ -11,7 +11,7 @@ spring:
         - id: carSales
           uri: http://localhost:8081
           predicates:
-            - Path=/carSales/** 
+            - Path=/carSaleses/** 
         - id: inspection
           uri: http://localhost:8082
           predicates:
@@ -23,7 +23,7 @@ spring:
         - id: dashboard
           uri: http://localhost:8084
           predicates:
-            - Path= 
+            - Path=/salesStatuses/** 
       globalcors:
         corsConfigurations:
           '[/**]':
@@ -46,7 +46,7 @@ spring:
         - id: carSales
           uri: http://carSales:8080
           predicates:
-            - Path=/carSales/** 
+            - Path=/carSaleses/**  
         - id: inspection
           uri: http://inspection:8080
           predicates:
@@ -58,7 +58,7 @@ spring:
         - id: dashboard
           uri: http://dashboard:8080
           predicates:
-            - Path= 
+            - Path=/salesStatuses/** 
       globalcors:
         corsConfigurations:
           '[/**]':
